@@ -9,6 +9,7 @@ const sequelize = process.env.DATABASE_URL
 
 const db = {
   User: require('./user')(sequelize, Sequelize),
+  Reservation: require('./reservation')(sequelize, Sequelize),
   sequelize,
   Sequelize
 };
