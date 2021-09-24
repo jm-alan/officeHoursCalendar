@@ -19,4 +19,6 @@ module.exports = (sequelize, { DataTypes, fn }) => {
     sequelize,
     modelName: 'Reservation'
   });
+
+  return Reservation;
 };
