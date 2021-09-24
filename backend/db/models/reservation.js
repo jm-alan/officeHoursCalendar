@@ -5,7 +5,9 @@ module.exports = (sequelize, { DataTypes, fn }) => {
   class Reservation extends Model {}
 
   Reservation.init({
-    weekday: DataTypes.INTEGER,
+    day: DataTypes.INTEGER,
+    month: DataTypes.INTEGER,
+    year: DataTypes.INTEGER,
     studentName: DataTypes.STRING(50),
     createdAt: {
       type: DataTypes.DATE,
